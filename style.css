@@ -1,26 +1,58 @@
-@charset "UTF-8";
-
-html {
-  font-size: 100%;
-}
+/* 基本設定 */
 body {
-  color: #383e45;
-  font-size: 0.9rem;
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333;
 }
-a {
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+/* ロゴ */
+.logo {
+  background-color: #333;
+  color: white;
+  padding: 4px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* ナビゲーションリンク */
+nav a {
+  margin-left: 20px;
   text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }
-img {
-  max-width: 100%;
+
+nav a:hover {
+  text-decoration: underline;
 }
-li {
-  list-style: none;
-}
-.site-title {
-  width: 120px;
-  line-height: 1px;
-  padding: 10px 0;
-}
-.site-title a {
+
+/* ヒーロー画像セクション */
+.hero img {
+  width: 100%;
+  height: auto;
   display: block;
+}
+
+/* セクション */
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 28px;
+  border-bottom: 2px solid #333;
+  display: inline-block;
+  padding-bottom: 4px;
 }
